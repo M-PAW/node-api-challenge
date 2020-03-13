@@ -12,3 +12,11 @@ I need this code, but don't know where, perhaps should make some middleware, don
 
 Go code!
 */
+require('dotenv')
+const server = require('./server.js');
+const port = process.env.PORT || 5005
+server.listen(port, () => {
+    console.log(`\n*** Cast ye in in the name of GOD: Ye not Guilty! ***\n`);
+    console.log(`\n*** Server now Running on http://localhost:${port} ***\n`);
+});
+
